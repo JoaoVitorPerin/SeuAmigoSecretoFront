@@ -3,7 +3,7 @@
     <form [formGroup]="formLogin">
         <div class="grid flex justify-content-center">
             <div class="col-12">
-                <app-form type="text" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="username" formControlName="username" erro="Informe o seu usuário!" label="Usuário" placeholder="Digite seu usuário" ngDefaultControl/>
+                <app-form type="text" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="email" formControlName="email" erro="Informe o seu usuário!" label="Email" placeholder="Digite seu email" ngDefaultControl/>
             </div>
             <div class="col-12">
                 <app-form type="password" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="password" formControlName="password" placeholder="Digite a sua senha" erro="Informe a sua senha!" label="Senha" ngDefaultControl/>

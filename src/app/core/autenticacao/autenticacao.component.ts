@@ -38,7 +38,7 @@ export class AutenticacaoComponent implements OnInit {
     this.tokenService.clearToken()
 
     this.formLogin = this.formBuilder.group({
-      username: [null, Validators.required],
+      email: [null, Validators.required],
       password: [null, Validators.required],
     })
   }

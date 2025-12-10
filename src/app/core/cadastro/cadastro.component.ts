@@ -63,15 +63,11 @@ export class CadastroComponent implements OnInit {
     this.tokenService.clearToken()
 
     this.formCadastro = this.formBuilder.group({
-      nomeCompleto: [null, Validators.required],
-      cpf: [null, Validators.required],
-      username: [null, Validators.required],
-      dataNascimento: [null, Validators.required],
+      nome: [null, Validators.required],
       email: [null, [Validators.required, Validators.email]],
-      genero: [null, Validators.required],
       password: [null, [Validators.required, validatorSenhaForte()]],
       confirmPassword: [null, Validators.required],
-      ondeConheceu: [null, Validators.required]
+      ondeConheceu: [null]
     },
     { validators: confirmPasswordValidator }
     );

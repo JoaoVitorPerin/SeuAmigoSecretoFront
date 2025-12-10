@@ -4,22 +4,10 @@
     <form [formGroup]="formCadastro" class="px-5 md:px-0">
         <div class="grid flex justify-content-center">
             <div class="col-12 md:col-6">
-                <app-form type="text" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="nomeCompleto" formControlName="nomeCompleto" erro="Informe o seu nome completo" label="Nome completo" placeholder="Digite seu nome completo" ngDefaultControl/>
-            </div>
-            <div class="col-12 md:col-6">
-                <app-form type="cpf" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="cpf" formControlName="cpf" placeholder="Digite seu CPF" [erro]="erroCPF()" label="CPF" (blur)="validarCPF()" ngDefaultControl/>
-            </div>    
-            <div class="col-12 md:col-6">
-                <app-form type="text" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="username" formControlName="username" placeholder="Digite o seu username" erro="Informe o seu username!" label="Nome de usuário" ngDefaultControl/>
-            </div>
+                <app-form type="text" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="nome" formControlName="nome" erro="Informe o seu nome" label="Nome" placeholder="Digite seu nome" ngDefaultControl/>
+            </div>  
             <div class="col-12 md:col-6">
                 <app-form type="text" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="email" formControlName="email" placeholder="Informe o seu e-mail!" erro="Informe um email válido!" label="E-mail" ngDefaultControl/>
-            </div>
-            <div class="col-12 md:col-6">
-                <app-form type="select" [items]="opcoesGenero" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="genero" formControlName="genero" placeholder="Selecione o seu gênero" erro="Informe seu gênero!" label="Gênero" ngDefaultControl/>
-            </div>
-            <div class="col-12 md:col-6">
-                <app-form type="date-manual" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="dataNascimento" formControlName="dataNascimento" placeholder="Digite a sua data de nascimento" erro="Informe sua data de nascimento!" label="Data de Nascimento" (blur)="validarDataValida('dataNascimento', formCadastro)" ngDefaultControl/>
             </div>
             <div class="col-12 md:col-6">
                 <app-form type="password" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="password" formControlName="password" placeholder="Digite a sua senha" label="Crie a sua senha" ngDefaultControl/>
@@ -31,7 +19,7 @@
                 <app-form type="password" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="password" formControlName="confirmPassword" placeholder="Digite a sua senha" [erro]="mensagemErroConfirmarSenha()" label="Confirme sua senha" ngDefaultControl/>
             </div>
             <div class="col-12 ">
-                <app-form type="select" [items]="opcoesOndeConheceu" [exibirLabelObrigatoriedade]="true" [readonly]="loadingRequest()" id="ondeConheceu" formControlName="ondeConheceu" placeholder="Digite onde você conheceu a GoodGain" erro="Informe onde você conheceu a GoodGain!" label="Onde você conheceu a GoodGain?" ngDefaultControl/>
+                <app-form type="select" [items]="opcoesOndeConheceu" [readonly]="loadingRequest()" id="ondeConheceu" formControlName="ondeConheceu" placeholder="Digite onde você conheceu a Seu amigo secreto?" label="Onde você conheceu a Seu amigo secreto?" ngDefaultControl/>
             </div>
         </div>
         <p-button label="Entrar" [disabled]="loadingRequest()" [loading]="loadingRequest()" (click)="cadastro()" styleClass="w-full"/>
