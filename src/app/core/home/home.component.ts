@@ -38,14 +38,14 @@ export class HomeComponent implements OnInit {
       title: 'Início',
       is_ativo: true,
     },
-    {
-      id: 'precos',
-      title: 'Preços',
-      is_ativo: false,
-    },
+    // {
+    //   id: 'precos',
+    //   title: 'Preços',
+    //   is_ativo: false,
+    // },
     {
       id: 'recursos',
-      title: 'Recursos',
+      title: 'Como funciona?',
       is_ativo: false,
     }
   ]

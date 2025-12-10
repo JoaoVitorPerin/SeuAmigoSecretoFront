@@ -17,19 +17,24 @@ import { TagModule } from 'primeng/tag';
 export class FeaturesSistemaComponent {
     features = [
     {
-      title: "Recomendações Personalizadas",
-      description: "Automatize tarefas e fluxos de trabalho repetitivos para economizar tempo e reduzir erros em análises.",
-      icon: "bolt",
-    },
-    {
-      title: "Análise Avançada",
-      description: "Obtenha insights valiosos com visualização de dados em tempo real e relatórios.",
+      title: "1 - Crie o grupo",
+      description: "Cadastre os participantes e defina as regras do amigo secreto.",
       icon: "users",
     },
     {
-      title: "Dashboards Comparativos",
-      description: "Compare o desempenho de diferentes estratégias e métodos com facilidade.",
-      icon: "chart-bar",
+      title: "2 - Configure o sorteio",
+      description: "Informe a data, o valor do presente e, se quiser, restrições de quem não pode tirar quem.",
+      icon: "cog",
+    },
+    {
+      title: "3 - Faça o sorteio",
+      description: "Com um clique, o sistema sorteia automaticamente todos os participantes.",
+      icon: "bell",
+    },
+    {
+      title: "4 - Envie os resultados",
+      description: "Cada pessoa recebe o nome do seu amigo secreto de forma segura e confidencial.",
+      icon: "share-alt",
     },
   ]
 }
